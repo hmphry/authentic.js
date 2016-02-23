@@ -2,7 +2,7 @@
 Authentic.js is a dependency-free, JavaScript client-side form validator. 
 
 ## Getting Started
-To begin, copy the file which fits your system. Once intergrated, authentic.js currently outputs on method, `authentic.init({containers: "DOM", correctClass: "string", incorrectClass: "string"})`.
+To begin, copy the file which fits your system. Once intergrated, authentic.js currently outputs on method, `authentic.init({containers: "DOM", correctClass: "string", incorrectClass: "string"})`. All of these are assumed, so you can just run `authentic.init()` if you don't care.
 
 ### Params
 `containers` is the DOM element tree to the form you'd like to target. By default, authentic.js will search for the `form` element. It will ignore any form, or field in a valid form, with the `novalidate` attribute.
