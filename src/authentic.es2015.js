@@ -20,7 +20,7 @@ export default (function(){
 	const getForms = function(){
 		for(let i in forms){
 			if(!hasAttributes(forms[i], "novalidate") && forms[i].tagName){
-				formsToValidate.push({form: forms[i], fields: getFields(forms[i].childNodes)});
+				formsToValidate.push({form: forms[i], fields: getFields(forms[i].getElementsByTagName("*"))});
 			}
 		}	
 	}

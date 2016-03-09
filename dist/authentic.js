@@ -30,7 +30,7 @@ var authentic = function () {
             if (!hasAttributes(forms[i], 'novalidate') && forms[i].tagName) {
                 formsToValidate.push({
                     form: forms[i],
-                    fields: getFields(forms[i].childNodes)
+                    fields: getFields(forms[i].getElementsByTagName('*'))
                 });
             }
         }
@@ -197,4 +197,3 @@ var authentic = function () {
     };
     return API;
 }();
-authentic.init();
